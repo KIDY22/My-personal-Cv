@@ -1,0 +1,207 @@
+/* using border-box for all of my elements */
+
+*{
+    box-sizing: border-box;
+}
+html{
+    font-size: 20px;
+    font-family: "Playfair Display";
+}
+
+/* i want my whole Cv to have earthy colors: browns,greens,colors of nature */
+/* i need to add margin, padding and border to the body */
+body{
+    background-color: #748C54;    /* background color is an earthy tone for the vibe of my cv */
+    font-family: "Playfair Display", "roboto condensed"; 
+    font-size: small;
+    text-align:left;
+    line-height: 2;  /* for better readability */      
+    text-indent:5%;
+    word-spacing: 5px;
+    margin:auto;
+    padding: 2em; 
+    border: #553823 solid 5px;
+    
+} 
+
+/* this is positioning my image, my contact information and even my name */
+header{
+    font-size: 12px;
+    text-align: center;
+    color: #312D20;
+    line-height: 1.5em;
+    padding-bottom: 2em;
+    position: relative;
+    }
+    
+
+/* this is styling my name only and being more spacific with how i want
+my name to look, i could of included this in my 'header'
+section but i want only certain conditions to apply to my name only  */
+header h1{
+    display: flex;
+    justify-content: center;
+    align-items: center; */
+    text-align: center;
+    color: #0A2900;
+    font-size: 3.5rem;  
+    font-weight:600;
+    text-shadow: 5px 3px #635B40;
+    line-height: 1;
+    position: relative;
+    margin-top: 0;
+    padding: 1em;
+    /* right: 17.5%; */
+}
+
+/* styling for my image, make it rounder*/
+
+img{
+    border-radius:50%;
+    border: #DDD8C4 5px solid;
+    float: left;
+    /* height: auto; */
+    display: block;
+    margin: 0 auto;
+    height: 210px;
+    width: 210px;
+    }
+
+    /* styling for sections and adding border */
+section{
+    margin: 2em 0;
+    padding: 1em;
+    border-top: 1em solid #748C54;
+}
+
+/* styling for sub heading, this puts certain styling conditions on these titles: about me,
+work experience,education, projects, soft skills, technical skills,*/
+h2{
+    font-size: 1.5rem;
+    text-align:center;
+    font-weight: bold;
+    color: #312D20;
+    text-decoration: underline dotted #D7F6CB;
+    padding: 1em;
+}
+
+/* styling for h3 which is my 'contact me' form */
+h3{
+    font-size:2em;
+    text-align: center;
+    font-weight: bold;
+    color:#292b26;
+    padding: 1em;
+}
+/* this is styling my paragraph thats undearneath my about me section */
+p{
+    text-align: center;
+    font-size: 1em;
+}
+
+/* styling for li */
+   li {
+       text-align: center;
+   }
+
+
+/* table styling and size */
+ 
+table  {
+    width: 100%;
+    border-collapse: collapse;
+    color: rgb(198, 218, 198)
+}
+
+/* i did this seperate from the table above because i only wanted to target the
+'th' tag to add style to them only */
+.Work-Experience thead th {
+    font-size: 20px;
+    color: #2e2d26;
+    text-align:center;
+}
+
+
+/* styling for my hyperlinks, removing undeline */
+a{
+    text-decoration: none;
+    color: #46280e;
+}
+
+
+/* removing outlines */
+form input,
+textarea{
+    outline: none;
+}
+
+form fieldset{
+    border: none;
+}
+/* styling my form  */
+form{
+    padding: 2em;
+    background-color: #748C54;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(180, 169, 147);
+    text-align: center;
+}
+
+/* styling my button */
+form button{
+    background-color: #8d8276;
+    border: 2em;
+    border-radius: 10px;
+    padding: 1em 2em;
+    font-size: .80em;
+    color: #214126;
+    cursor: pointer;
+    box-shadow: 0 0 20px rgb(44, 42, 37);
+    transition: color 0.5s;
+}
+
+/* adding a transition to my form buttons */
+form button:hover{
+    color: whitesmoke;
+}
+
+
+ /* moving contact info to the right of webpage */
+ /* @media (max-width: 480px){ */
+    .contact-info{
+        font-size: 15px;
+        position: absolute;
+        left: 40%;
+        margin-top: 1em;
+        top: 2em;
+    }
+
+    /* making my img screen friendly using media query of 480px */
+ 
+   @media (max-width: 480px) {
+    body{
+        background-color: red;
+        font-size: small;
+        padding: 1em;
+    }
+    
+    img{
+    max-width: 80%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    }
+    
+    header h1{
+        font-size: 2rem;
+    }
+    .contact-info{
+        position: relative;
+        text-align: right;
+        margin-top: 1em;
+        bottom: auto;
+        right: auto;
+    }
+    }
+
+ 
